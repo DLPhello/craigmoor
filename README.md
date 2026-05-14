@@ -16,4 +16,12 @@ In the GitHub repo settings, set **Pages** → **Build and deployment** → **So
 
 ## Local preview
 
-Open `docs/index.html` in a browser, or run any static server with `docs` as the web root (for example `npx serve docs`).
+Serve the **`docs`** folder at the path **`/craigmoor/`** so it matches GitHub Pages (for example `npx serve` from the repo root after configuring a rewrite, or open the deployed URL). Every HTML page includes `<base href="/craigmoor/">` so assets resolve correctly when the site is published as **`https://<user>.github.io/craigmoor/`** (with or without a trailing slash on the first segment).
+
+## Premium styling
+
+The home hero uses `docs/img/hero-home.jpg` (copied from `wine.jpg` in the image export). Replace that file to change the landing photograph.
+
+## Beyond static Pages
+
+For animations, CMS previews, i18n, or a bespoke design system, a **Next.js** (or similar) app deployed by **GitHub Actions** to Pages or Vercel is the natural upgrade path; the Markdown in `content/` can feed MDX or a static generation pipeline.
