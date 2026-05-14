@@ -329,6 +329,40 @@ main.prose hr {
   text-underline-offset: 0.3em;
 }
 
+/* Prose link styles must not beat .btn (same element is both .prose a and .btn — wine text on wine fill was unreadable). */
+.prose a.btn,
+.prose a.btn--ghost,
+.prose a.btn--muted {
+  text-decoration: none;
+}
+
+.prose a.btn {
+  color: #fffefb;
+}
+
+.prose a.btn:hover,
+.prose a.btn:focus-visible {
+  color: #fffefb;
+}
+
+.prose a.btn--ghost {
+  color: var(--wine);
+}
+
+.prose a.btn--ghost:hover,
+.prose a.btn--ghost:focus-visible {
+  color: var(--wine-deep);
+}
+
+.prose a.btn--muted {
+  color: var(--ink-soft);
+}
+
+.prose a.btn--muted:hover,
+.prose a.btn--muted:focus-visible {
+  color: var(--ink);
+}
+
 .prose strong {
   color: var(--ink);
   font-weight: 600;
