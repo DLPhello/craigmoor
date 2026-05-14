@@ -1,0 +1,56 @@
+# Terms of Use (`/terms-of-use/`)
+
+**Source URL:** https://craigmoor.com.au/terms-of-use/
+
+**Browser title:** Terms of Use – Craigmoor
+
+---
+
+# Terms of Use
+
+This website is owned and operated by A.G Oatley Wines.
+
+By accessing or using our website(s), or by ordering any product from us, you are deemed to have read, understood and agreed to the following Terms of Use, which include our Privacy Policy. If you do not agree with any of these Terms, you must not use our website(s) or place orders for any products.
+
+You may not order wine, or have wine delivered to anyone, if you or that person are under 18 years of age at the time of ordering. You must confirm your agreement with this explicitly at the time of ordering.
+
+When you place an order for wine on our website, and you choose online payment as your method of payment, this payment will be processed by a secure online payment gateway. If you fax or post your order to us, your order will be processed directly using other secure methods.
+
+Your order will be fulfilled by Robert Oatley Vineyards from our warehouse, and under normal circumstances will be delivered to your nominated delivery address within 2 to 10 business days. Delivery delays may occur as a result of factors out of the control of Robert Oatley Vineyards, and Robert Oatley Vineyards is not responsible for any such delays.
+
+In rare cases where the ordered stock is not available, Robert Oatley Vineyards reserves the right to substitute this wine with another similar wine that is of equal or higher value. In most instances, if the current vintage of the advertised wine is no longer available, the next vintage of the same wine will be delivered. Robert Oatley Vineyards will do this at its sole discretion, and they will also guarantee the quality of any replacement wines. If for some reason you do not like these wines, your account will be credited.
+
+#### Security Policy
+
+When providing or updating personal information, or when purchasing from Robert Oatley Vineyards, your financial details are protected through a secure server using 128-bit SSL (secure sockets layer) encryption technology. 128-bit SSL encryption is approximated to take at least one trillion years to break, and is the industry standard for secure web transactions. If you have any questions regarding our privacy or security policies, please contact our customer support centre.
+
+#### Prices
+
+Prices stated are in Australian dollars, and may be per bottle or per case, as stated. Prices include GST, unless otherwise stated.
+
+#### Returns Policy & Freight Rates
+
+If you are a Wine Club member (membership is free), you will enjoy free delivery within Australia. Please click here for more details. If you are not a member, while you may order in multiples of 6 of each of the wines (i.e. a half case), the full case freight rate for your delivery postcode will be charged for each 12 bottles (or part thereof). Freight rates vary from time-to-time, and are also a function of your delivery postcode, and are available before you checkout on the website (if ordering online) and on our offline order forms if you are ordering offline.
+
+Normal delivery lead times are 2 – 10 working days. Please note, we can only ship to addresses within Australia.
+
+Delivery instructions are a guide only and Robert Oatley Vineyards cannot guarantee that on all deliveries these instructions will be followed. If the customer is not in attendance when a delivery is attempted and no further instructions have been issued by the client, the item or items will be returned to the local depot where they can be collected upon signature. A card will be left in your letter box to advise of the collection point. Items will be held for 7 days. After this time uncollected items will be returned to Robert Oatley Vineyards. Please note if wine is to be resent to a customer under these circumstances, further full delivery charges will apply (for non members).
+
+Due to Liquor Licence laws, wines cannot be delivered to, ordered on behalf of, or accepted by person/s under the age of 18 years old.
+
+If for any reason we are unable to fulfill your order (e.g. out of stock) we will notify you within 2 business days to arrange alternative product(s), an alternative delivery time or a full refund.
+
+#### Customer Service Policy
+
+Robert Oatley Vineyards is committed to providing exceptional customer service and quality products to our customers. We endeavour to make sure that all products listed on our website are currently in stock and pricing is correct.
+
+Robert Oatley Vineyards guarantees the quality of all products that are sold and delivered to clients through our online or offline facilities. If the client has valid reasons for return of stock, Robert Oatley Vineyards will credit the customer account for the total value of the purchase (including delivery charge), providing no more than two (2) bottles have been consumed and the balance of the wine is returned to us. Robert Oatley Vineyards reserves the right to exchange the products for other item/s of the same or greater value at Robert Oatley Vineyards’ sole discretion.
+
+Should you have any queries you can also contact us using the following details:
+
+Robert Oatley Vineyards  
+100 Pacific Hway  
+ST LEONARDS NSW 2067  
+Phone: (02) 9433 3255  
+Fax: (02) 9433 0456  
+E-mail: orders@robertoatley.com.au

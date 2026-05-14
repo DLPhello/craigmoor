@@ -1,0 +1,269 @@
+/* Craigmoor static preview — GitHub Pages friendly */
+:root {
+  --bg: #1a1a1a;
+  --fg: #f5f0e8;
+  --muted: #c9c2b6;
+  --accent: #b08d57;
+  --panel: #242424;
+  --border: #3a3a3a;
+  --danger-bg: #3a2a1a;
+  --danger-fg: #ffd8a8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  z-index: 1000;
+}
+
+.banner {
+  padding: 0.65rem 1.25rem;
+  text-align: center;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+}
+
+.banner--info {
+  background: var(--danger-bg);
+  color: var(--danger-fg);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: #111;
+}
+
+.site-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.brand img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.nav-primary,
+.nav-footer {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+}
+
+.nav-primary a,
+.nav-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-primary a:hover,
+.nav-footer a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.prose h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.prose p {
+  margin: 1rem 0;
+}
+
+.prose ul {
+  padding-left: 1.25rem;
+}
+
+.prose a {
+  color: var(--accent);
+}
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero__kicker {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: 0.72rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.hero__lines {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  font-size: 1.35rem;
+}
+
+.hero__lines li {
+  margin: 0.35rem 0;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid var(--accent);
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #111;
+}
+
+.btn--muted {
+  border-color: var(--border);
+  color: var(--muted);
+}
+
+.btn--muted:hover {
+  border-color: var(--accent);
+  color: var(--fg);
+  background: transparent;
+}
+
+.inactive-panel {
+  border: 1px dashed var(--border);
+  background: var(--panel);
+  padding: 1.25rem;
+  margin: 2rem 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: #111;
+  padding: 2.5rem 1.25rem 2rem;
+  margin-top: 2rem;
+}
+
+.site-footer__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.site-footer h2 {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+}
+
+.site-footer .nav-footer {
+  flex-direction: column;
+  gap: 0.35rem;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.85rem;
+}
+
+.footer-meta {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
+}
+
+.form-note {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
