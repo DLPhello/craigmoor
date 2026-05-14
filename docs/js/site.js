@@ -42,7 +42,7 @@
           }
         });
       },
-      { rootMargin: "0px 0px -6% 0px", threshold: 0.06 }
+      { rootMargin: "0px 0px -8% 0px", threshold: 0.02 }
     );
 
     document.querySelectorAll(".reveal").forEach(function (el) {
