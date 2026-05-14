@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&family=Raleway:wght@400;600;700&display=swap");
 
 /* Craigmoor — warm light winery presentation (GitHub Pages: <base href="/craigmoor/">) */
 :root {
@@ -346,7 +346,7 @@ main.prose hr {
 /* —— Home hero + slideshow —— */
 .hero--home {
   position: relative;
-  min-height: min(88vh, 56rem);
+  min-height: min(94vh, 62rem);
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -479,6 +479,205 @@ main.prose hr {
   flex-wrap: wrap;
   gap: var(--s-3) var(--s-4);
   justify-content: center;
+}
+
+/* —— Home: cinematic hero + impact row (aligned with craigmoor.com.au) —— */
+.home .hero--home .hero__scrim--cinema {
+  background:
+    linear-gradient(180deg, rgba(12, 10, 9, 0.45) 0%, rgba(12, 10, 9, 0.1) 38%, rgba(12, 10, 9, 0.35) 100%),
+    radial-gradient(ellipse 90% 70% at 50% 20%, rgba(0, 0, 0, 0.12), transparent 55%);
+}
+
+.home .hero--home .hero__panel--cinema {
+  inset: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-12) var(--s-6);
+  background: none;
+}
+
+.home .hero--home .hero__inner--cinema {
+  max-width: 54rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+.home .hero__cinema-kicker {
+  font-family: "Raleway", var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(255, 252, 248, 0.88);
+  margin: 0 0 var(--s-6);
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+}
+
+.home .hero__cinema-line {
+  font-family: "Raleway", var(--font-ui);
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #fffefb;
+  margin: 0 0 var(--s-3);
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.55);
+}
+
+.home .hero__cinema-head {
+  font-family: "Raleway", var(--font-ui);
+  font-size: clamp(2.85rem, 11vw, 6.25rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fffefb;
+  margin: 0 0 var(--s-8);
+  text-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+}
+
+.home .hero__cinema-sub {
+  font-family: "Raleway", var(--font-ui);
+  font-size: clamp(0.8rem, 1.35vw, 0.95rem);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 252, 248, 0.92);
+  margin: 0;
+  line-height: 1.65;
+  max-width: 36rem;
+  margin-inline: auto;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
+}
+
+.impact-grid {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.impact-tile {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: min(58vh, 36rem);
+  color: #fffefb;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.45s var(--ease-out), filter 0.45s var(--ease-out);
+}
+
+.impact-tile:hover,
+.impact-tile:focus-visible {
+  transform: scale(1.008);
+  filter: brightness(1.03);
+}
+
+.impact-tile:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: -4px;
+  z-index: 2;
+}
+
+.impact-tile__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  transition: transform 1.1s var(--ease-soft);
+}
+
+.impact-tile:hover .impact-tile__bg,
+.impact-tile:focus-visible .impact-tile__bg {
+  transform: scale(1.06);
+}
+
+.impact-tile__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(12, 10, 9, 0.25) 0%, rgba(12, 10, 9, 0.55) 75%);
+  pointer-events: none;
+}
+
+.impact-tile__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-5);
+  width: 100%;
+  padding: var(--s-12) var(--s-6);
+  text-align: center;
+}
+
+.impact-tile__icon {
+  display: block;
+  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.45));
+}
+
+.impact-tile__icon--photo {
+  width: 64px;
+  height: auto;
+}
+
+.impact-tile__label {
+  font-family: "Raleway", var(--font-ui);
+  font-size: clamp(1.1rem, 2.4vw, 1.65rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-shadow: 0 3px 26px rgba(0, 0, 0, 0.55);
+}
+
+.club-bar {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background: linear-gradient(90deg, #7a4a28 0%, #9a5c32 42%, #7a4a28 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.club-bar__link {
+  display: block;
+  padding: var(--s-8) var(--s-6);
+  font-family: "Raleway", var(--font-ui);
+  font-size: clamp(0.72rem, 1.45vw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #fffefb;
+  transition: background 0.3s var(--ease-soft), letter-spacing 0.35s var(--ease-out);
+}
+
+.club-bar__link:hover,
+.club-bar__link:focus-visible {
+  background: rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 720px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-tile {
+    min-height: min(52vh, 28rem);
+  }
 }
 
 .btn {
@@ -781,6 +980,19 @@ address {
 
   .hero__lines {
     font-size: 1.28rem;
+  }
+
+  .home .hero--home .hero__panel--cinema {
+    padding: var(--s-10) var(--s-4);
+  }
+
+  .home .hero__cinema-line {
+    letter-spacing: 0.28em;
+  }
+
+  .home .hero__cinema-head {
+    font-size: clamp(2.35rem, 12vw, 3.6rem);
+    margin-bottom: var(--s-6);
   }
 }
 
