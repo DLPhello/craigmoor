@@ -22,6 +22,14 @@ Serve the **`docs`** folder at the path **`/craigmoor/`** so it matches GitHub P
 
 The home hero uses `docs/img/hero-home.jpg` (copied from `wine.jpg` in the image export). Replace that file to change the landing photograph.
 
+### Design system (this iteration)
+
+- **Tokens:** spacing scale (`--s-*`), radii, motion easings, and colour roles live in `docs/css/site.css` under `:root`.
+- **Typography:** Cormorant Garamond (display) + Outfit (UI), loaded via Google Fonts `@import`.
+- **Motion:** `docs/js/site.js` adds scroll shadow on the header and intersection-based `.reveal` fades (disabled when `prefers-reduced-motion: reduce`).
+- **Gallery:** responsive mosaic in `gallery.html` with assets under `docs/img/gallery/` (`01.jpg` … from the legacy export batch copy).
+- **GitHub Pages base:** keep `<base href="/craigmoor/">` aligned with the repository name so relative assets resolve.
+
 ## Beyond static Pages
 
 For animations, CMS previews, i18n, or a bespoke design system, a **Next.js** (or similar) app deployed by **GitHub Actions** to Pages or Vercel is the natural upgrade path; the Markdown in `content/` can feed MDX or a static generation pipeline.

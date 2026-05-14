@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <base href="/craigmoor/">
+  <meta name="theme-color" content="#0c0a0b">
+  <meta name="description" content="Craigmoor Estate Wines — historic Mudgee cellar door, Craigmoor and Montrose wines, Oatley family.">
   <title>Gallery | Craigmoor Estate Wines</title>
   <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="page">
   <a class="skip" href="#main">Skip to content</a>
   <div class="banner banner--info">Static preview on GitHub Pages. WordPress login not required. Wine shop / member account features are inactive.</div>
   <header class="site-header">
@@ -23,14 +25,55 @@
     </div>
   </header>
 
-  <main id="main" class="prose">
+  <main id="main" class="prose reveal">
+    <p class="gallery-lead">Mudgee gallery</p>
     <h1>Gallery</h1>
-    <p class="hero__kicker" style="text-align:left;">Mudgee Gallery</p>
-    <div class="inactive-panel">
-      <p><strong>Next step:</strong> the automated copy pass did not extract gallery images or captions. Open the legacy <a href="https://craigmoor.com.au/gallery/">Gallery</a> page in a browser, export each image, drop files under <code>docs/img/gallery/</code>, and extend this HTML with a simple responsive grid.</p>
-      <p>Your current <code>old_images_download</code> bundle is mostly SVG chrome; it likely does not contain the photographic grid from this page.</p>
+    <p>A glimpse of the region, cellar door life, and the landscapes that shape Craigmoor. Photography is drawn from the legacy site export and can be swapped for art-directed shoots.</p>
+
+    <div class="gallery-mosaic" aria-label="Image gallery">
+      <figure>
+        <img src="img/gallery/01.jpg" alt="Craigmoor vineyard and estate imagery" width="800" height="600" loading="eager">
+        <figcaption>Estates</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/02.jpg" alt="Vineyard rows in the Mudgee region" width="600" height="450" loading="lazy">
+        <figcaption>Vines</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/03.jpg" alt="Regional landscape" width="600" height="450" loading="lazy">
+        <figcaption>Region</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/04.jpg" alt="Winery atmosphere" width="600" height="450" loading="lazy">
+        <figcaption>Cellar door</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/05.jpg" alt="Wine country detail" width="600" height="450" loading="lazy">
+        <figcaption>Detail</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/06.jpg" alt="Seasonal vineyard view" width="600" height="450" loading="lazy">
+        <figcaption>Seasons</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/07.jpg" alt="Estate grounds" width="600" height="450" loading="lazy">
+        <figcaption>Grounds</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/08.jpg" alt="Sunset over vines" width="600" height="450" loading="lazy">
+        <figcaption>Evening</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/09.jpg" alt="Craigmoor experience" width="600" height="450" loading="lazy">
+        <figcaption>Experience</figcaption>
+      </figure>
     </div>
-    <p><a class="btn btn--muted" href="buy-wine-inactive.html">Join our club (inactive)</a></p>
+
+    <div class="inactive-panel">
+      <p><strong>Note:</strong> filenames follow the automated export order. Replace images under <code>docs/img/gallery/</code> with curated photography and update <code>alt</code> text to match.</p>
+    </div>
+
+    <p><a class="btn btn--muted" href="buy-wine-inactive.html">Wine club (inactive)</a></p>
   </main>
 
   <footer class="site-footer">
@@ -72,5 +115,6 @@
     </div>
     <p class="footer-meta">© 2026 Robert Oatley Vineyards Pty Ltd. All rights reserved. Liquor Licensing Act 1997. It is against the law to sell or supply alcohol to, or to obtain alcohol on behalf of, a person under the age of 18 years.</p>
   </footer>
+  <script src="js/site.js" defer></script>
 </body>
 </html>
