@@ -18,17 +18,19 @@ In the GitHub repo settings, set **Pages** → **Build and deployment** → **So
 
 Serve the **`docs`** folder at the path **`/craigmoor/`** so it matches GitHub Pages (for example `npx serve` from the repo root after configuring a rewrite, or open the deployed URL). Every HTML page includes `<base href="/craigmoor/">` so assets resolve correctly when the site is published as **`https://<user>.github.io/craigmoor/`** (with or without a trailing slash on the first segment).
 
-## Premium styling
+## Look & feel
 
-The home hero uses `docs/img/hero-home.jpg` (copied from `wine.jpg` in the image export). Replace that file to change the landing photograph.
+- **Palette:** warm paper backgrounds, wine and gold accents, and dark type for readability (closer to a classic cellar-door site than a dark UI theme).
+- **Home hero:** full-bleed **crossfading photographs** (`img/hero-home.jpg` plus several `img/gallery/*` frames), with copy on a light panel. Slideshow timing lives in `docs/js/site.js`.
+- **Typography:** Cormorant Garamond + Outfit via Google Fonts.
+- **Motion:** header shadow on scroll, scroll-in reveals on inner pages, and the hero slideshow (all respect `prefers-reduced-motion`).
+- **Gallery page:** responsive mosaic using `docs/img/gallery/01.jpg` onward from the estate export.
 
-### Design system (this iteration)
+Design tokens (`--s-*`, colours, radii, easings) are defined in `docs/css/site.css` under `:root`.
 
-- **Tokens:** spacing scale (`--s-*`), radii, motion easings, and colour roles live in `docs/css/site.css` under `:root`.
-- **Typography:** Cormorant Garamond (display) + Outfit (UI), loaded via Google Fonts `@import`.
-- **Motion:** `docs/js/site.js` adds scroll shadow on the header and intersection-based `.reveal` fades (disabled when `prefers-reduced-motion: reduce`).
-- **Gallery:** responsive mosaic in `gallery.html` with assets under `docs/img/gallery/` (`01.jpg` … from the legacy export batch copy).
-- **GitHub Pages base:** keep `<base href="/craigmoor/">` aligned with the repository name so relative assets resolve.
+## GitHub Pages base
+
+Keep `<base href="/craigmoor/">` aligned with the repository name so relative assets resolve at **`https://<user>.github.io/craigmoor/`** (with or without a trailing slash on the first path segment).
 
 ## Beyond static Pages
 
